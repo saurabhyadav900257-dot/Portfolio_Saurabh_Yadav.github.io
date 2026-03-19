@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for SEO & Accessibility -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Saurabh Yadav - Data Analyst | Power BI | Tableau | SQL | Advanced Excel | Portfolio showcasing data analytics & visualization projects">
+    <meta name="keywords"
+        content="Data Analyst, Power BI, Tableau, SQL, Excel, Data Visualization, Business Intelligence, Analytics, Lucknow">
+    <meta name="author" content="Saurabh Yadav">
+    <meta name="theme-color" content="#00d4ff">
+    <meta name="robots" content="index, follow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- OpenGraph Tags for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Saurabh Yadav - Data Analyst Portfolio">
+    <meta property="og:description"
+        content="Professional Data Analyst showcasing Power BI dashboards, SQL database design, and advanced analytics projects">
+    <meta property="og:site_name" content="Saurabh Yadav Portfolio">
+
+    <title>Saurabh Yadav | Data Analyst | Power BI | SQL | Tableau</title>
+
+    <!-- Modern Font Loading (Optimized) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body role="application">
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">Saurabh Yadav</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Loading Animation -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-aos="fade-up">
+                    <span class="gradient-text">
+                        Transforming Data<br>Into Actionable Insights
+                    </span>
+                </h1>
+
+                <div class="typing-container" data-aos="fade-up" data-aos-delay="200">
+                    <span class="typing-text">
+                        <span class="typing-role">Data Analyst </span>
+                    </span>
+                </div>
+
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                    Aspiring Data Analyst passionate about uncovering insights from complex datasets.
+                    Specialized in Power BI, Tableau, SQL, and Advanced Excel.
+                </p>
+
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!-- Download Resume Button -->
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
+                    <a href="#" class="btn btn-outline" title="Download Saurabh Yadav's Resume">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-hire-me">
+                        <i class="fas fa-handshake"></i>
+                        <span>Hire Me</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <div class="profile-glow">
+                    <img src="images/profile_picture.png" alt="Saurabh Yadav - Data Analyst" class="profile-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll" data-aos="fade-up" data-aos-delay="800">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-wrapper">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="line-accent"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="about-card">
+                        <h3><i class="fas fa-user-tie text-accent"></i> Professional Summary</h3>
+                        <p>
+                            Motivated and detail-oriented aspiring Data Analyst with strong knowledge of <strong>Excel,
+                                SQL, Power BI, and Tableau</strong>.
+                            Passionate about transforming raw data into meaningful insights that drive business
+                            decisions. Currently seeking
+                            opportunities to apply analytical skills in a professional environment.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3><i class="fas fa-lightbulb text-accent"></i> My Approach</h3>
+                        <p>
+                            I believe in a methodical approach to data analysis: <strong>understanding business
+                                problems</strong>, cleaning and preparing data,
+                            performing in-depth analysis, and creating compelling visualizations that tell the story. My
+                            projects demonstrate
+                            proficiency in end-to-end analytics workflows from data extraction to actionable insights.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item" data-aos="zoom-up">
+                            <h4>2+</h4>
+                            <p>Showcase Projects</p>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-up" data-aos-delay="100">
+                            <h4>6+</h4>
+                            <p>Technical Skills</p>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-up" data-aos-delay="200">
+                            <h4>100%</h4>
+                            <p>Commitment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info" data-aos="fade-left">
+                    <div class="about-image">
+                        <img src="images/profile_picture.png" alt="Saurabh Yadav" class="about-img" loading="lazy">
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt info-icon"></i> Location</span>
+                            <span class="info-value">Lucknow, UP, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-graduation-cap info-icon"></i> Education</span>
+                            <span class="info-value">B.Sc., 2020</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-briefcase info-icon"></i> Experience</span>
+                            <span class="info-value">Fresher</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-bullseye info-icon"></i> Specialization</span>
+                            <span class="info-value">Data Analytics</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-phone-alt info-icon"></i> Phone</span>
+                            <span class="info-value">+91 9569664300</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-globe info-icon"></i> Languages</span>
+                            <span class="info-value">English, Hindi</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://www.linkedin.com/in/saurabh-yadav-7443143a2" target="_blank"
+                            rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/saurabhyadav900257-dot" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:saurabhyadav900257@gmail.com" class="social-icon" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919569664300" class="social-icon" title="Call">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-wrapper">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+                <div class="line-accent"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Business Intelligence & Visualization -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>📊 BI & Visualization</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Power BI</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Tableau</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Data Visualization</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Query Languages -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>🗄️ Database & Query</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>SQL (Advanced)</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Window Functions</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Joins & Subqueries</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Excel & Data Analysis -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>📈 Excel & Analysis</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Advanced Excel</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Pivot Tables & VLOOKUP</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Data Cleaning</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming & Additional Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>💻 Programming</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Data Structures</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Problem Solving</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Soft Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3>🛠️ Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Excel</span>
+                        <span class="skill-tag">Power BI Desktop</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3>🎯 Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Analytical Thinking</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                        <span class="skill-tag">Attention to Detail</span>
+                        <span class="skill-tag">Business Acumen</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-wrapper">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Practical implementations showcasing data analytics expertise</p>
+                <div class="line-accent"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: D-Mart Sales Dashboard -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-badge premium">Featured</div>
+                    <div class="project-image-wrapper">
+                        <img src="images/dmart-dashboard.png" alt="D-Mart Sales Dashboard - Power BI Dashboard"
+                            class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <p class="overlay-label">View Case Study</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>📊 D-Mart Sales Dashboard</h3>
+                            <span class="project-date">January 2026</span>
+                        </div>
+                        <p class="project-description">
+                            Designed and developed an interactive Power BI dashboard analyzing D-Mart's comprehensive
+                            sales performance metrics.
+                            Created real-time KPI tracking, revenue trend analysis, profit margin visualization, and
+                            implemented dynamic filters
+                            for stakeholder-driven business intelligence.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">📈 Key Metrics:</span>
+                                <span>Revenue, Profit, Sales Performance, Trends</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">⚙️ Features:</span>
+                                <span>Interactive Filters, Charts, KPI Tracking, Trend Analysis</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Dashboard Design</span>
+                            <span class="tag">Business Intelligence</span>
+                        </div>
+                        <div class="project-cta">
+                            <a href="#contact" class="link-btn">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Cab Booking System -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-image-wrapper">
+                        <img src="images/cab_booking_system.png" alt="Cab Booking System - SQL Database Design"
+                            class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <p class="overlay-label">View Case Study</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>🚕 Cab Booking System (SQL)</h3>
+                            <span class="project-date">February 2026</span>
+                        </div>
+                        <p class="project-description">
+                            Engineered a robust relational database schema for a comprehensive cab booking platform.
+                            Implemented complex SQL queries
+                            utilizing window functions, advanced joins, and aggregation functions to analyze booking
+                            patterns, customer segmentation,
+                            and revenue optimization.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">🏗️ Database Design:</span>
+                                <span>Multi-table Relational Schema, Normalization</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">📊 Analysis:</span>
+                                <span>Booking Trends, Customer Segmentation, Revenue Analysis</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Database Design</span>
+                            <span class="tag">Query Optimization</span>
+                        </div>
+                        <div class="project-cta">
+                            <a href="#contact" class="link-btn">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Journey Section -->
+    <section id="education" class="experience-section">
+        <div class="section-wrapper">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Education & Learning Journey</h2>
+                <p class="section-subtitle">Building expertise through education and hands-on projects</p>
+                <div class="line-accent"></div>
+            </div>
+
+            <div class="experience-container">
+                <div class="timeline">
+                    <!-- Education 1 -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Bachelor of Science (B.Sc.)</h3>
+                                <span class="timeline-date">2020</span>
+                            </div>
+                            <p class="timeline-company">Chhatrapati Sahu Ji Maharaj University, Kanpur</p>
+                            <p>
+                                Completed undergraduate degree with focus on analytical and quantitative subjects.
+                                Developed strong foundation in mathematics and problem-solving, which forms the basis
+                                for data analytics expertise.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Learning Journey - Skills -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="timeline-marker">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Advanced Excel Mastery</h3>
+                                <span class="timeline-date">2024 - 2025</span>
+                            </div>
+                            <p class="timeline-company">Self-Directed Learning</p>
+                            <p>
+                                Mastered advanced Excel functions including VLOOKUP, HLOOKUP, AGGREGATE functions,
+                                and pivot tables. Created multiple analysis projects demonstrating proficiency in
+                                data manipulation and visualization within Excel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Learning Journey - SQL -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="timeline-marker">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>SQL & Database Design</h3>
+                                <span class="timeline-date">2025 - Present</span>
+                            </div>
+                            <p class="timeline-company">Self-Directed Learning</p>
+                            <p>
+                                Developed strong SQL expertise including window functions, complex joins, subqueries,
+                                and data aggregation. Designed database schemas and implemented real-world projects
+                                like the Cab Booking System to showcase practical SQL knowledge.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Learning Journey - BI Tools -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="timeline-marker">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Power BI & Tableau Certification</h3>
+                                <span class="timeline-date">2025 - 2026</span>
+                            </div>
+                            <p class="timeline-company">Self-Directed Learning</p>
+                            <p>
+                                Completed comprehensive training in Power BI and Tableau. Built interactive dashboards
+                                including the D-Mart Sales Dashboard project demonstrating ability to create compelling
+                                data visualizations that drive business insights.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Learning Journey - Python -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="timeline-marker">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Python for Data Analysis</h3>
+                                <span class="timeline-date">2025 - Present</span>
+                            </div>
+                            <p class="timeline-company">Continuous Learning</p>
+                            <p>
+                                Building foundational knowledge in Python for data analysis and automation.
+                                Learning libraries like Pandas, NumPy, and Matplotlib to extend data analysis
+                                capabilities beyond traditional BI tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-wrapper">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">I'm always interested in discussing data analytics opportunities and
+                    challenges</p>
+                <div class="line-accent"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Lucknow, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:saurabhyadav900257@gmail.com">saurabhyadav900257@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919569664300">+91 9569664300</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/saurabh-yadav-7443143a2" target="_blank"
+                                    rel="noopener noreferrer">View Profile</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/saurabhyadav900257-dot" target="_blank"
+                                    rel="noopener noreferrer">View Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" method="POST" action="#" novalidate>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="fullName" placeholder="Your Full Name" required
+                            aria-label="Full Name">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" name="email" placeholder="Your Email Address" required
+                            aria-label="Email Address">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="subject" placeholder="Subject" required
+                            aria-label="Subject">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" name="message" placeholder="Your Message" rows="5"
+                            required aria-label="Message"></textarea>
+                        <span class="form-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" aria-label="Send Message">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                    <div class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Saurabh Yadav. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
