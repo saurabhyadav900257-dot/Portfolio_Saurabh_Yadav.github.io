@@ -801,8 +801,8 @@ section {
 }
 
 .about-image {
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto 3rem auto;
     position: relative;
     border-radius: 50%;
